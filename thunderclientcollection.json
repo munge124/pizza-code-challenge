@@ -1,0 +1,47 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "Pizza API",
+  "dateExported": "2025-06-15",
+  "version": "1.1",
+  "requests": [
+    {
+      "name": "Get All Pizzas",
+      "method": "GET",
+      "url": "http://localhost:5555/pizzas"
+    },
+    {
+      "name": "Get All Restaurants",
+      "method": "GET",
+      "url": "http://localhost:5555/restaurants"
+    },
+    {
+      "name": "Get Restaurant by ID",
+      "method": "GET",
+      "url": "http://localhost:5555/restaurants/1"
+    },
+    {
+      "name": "Create RestaurantPizza",
+      "method": "POST",
+      "url": "http://localhost:5555/restaurant_pizzas",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": {
+          "price": 12,
+          "pizza_id": 1,
+          "restaurant_id": 2
+        }
+      }
+    },
+    {
+      "name": "Delete Restaurant by ID",
+      "method": "DELETE",
+      "url": "http://localhost:5555/restaurants/2"
+    }
+  ]
+}
