@@ -69,13 +69,13 @@ Navigate to the project folder.
 Create and activate a virtual environment.
 
 Install dependencies:
-pip install flask flask_sqlalchemy flask_cors
+pipenv install flask flask_sqlalchemy flask_migrate
 
 Run the server:
-python server/app.py
+python3 server/app.py
 
 To seed the database:
-python server/seed.py
+python3 server/seed.py
 
 Testing with Thunder Client:
 
@@ -83,7 +83,7 @@ Open VS Code, install Thunder Client extension.
 
 Import the JSON file "pizza-api.thunder_collection.json".
 
-Make sure your server is running at http://localhost:5555 or your configured port.
+Make sure your server is running at http://localhost:5555 
 
 Use GET, POST, and DELETE requests to test the endpoints.
 
@@ -97,3 +97,9 @@ Follow proper naming and file structure.
 
 Credits:
 This project was built as part of a Flask code challenge for learning REST API design
+
+Author:
+Benson Kariuki  
+
+Github Username:
+munge124
